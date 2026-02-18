@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YOLO People Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>YOLO People Detection Dashboard</h1>
+
+    <div class="container">
+        <!-- Upload Image -->
+        <div class="card">
+            <h2 class="divh2">Upload Image</h2>
+            <form class="form" action="/upload_image" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" required>
+                <button type="submit">Upload & Detect</button>
+            </form>
+        </div>
+
+        <!-- Upload Video -->
+        <div class="card">
+            <h2 class="divh2">Upload Video</h2>
+            <form class="form" action="/upload_video" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" required>
+                <button type="submit">Upload & Detect</button>
+            </form>
+        </div>
+
+        <!-- Live Camera -->
+        <div class="card">
+            <h2 class="divh2">Live Camera Detection</h2>
+            <div class="anchor">
+                <a href="/live" target="_blank">
+                    <button type="button">Start Live Camera</button>
+                </a>
+                <h3 style="margin-top: 15%;">Have fun</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

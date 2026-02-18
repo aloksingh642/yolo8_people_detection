@@ -1,0 +1,1 @@
+ALERT_THRESHOLD = 1  # send email if more than 5 people detected

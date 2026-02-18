@@ -1,0 +1,40 @@
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Databases
+*.db
+*.sqlite3
+
+# Virtual environments
+venv/
+env/
+.MypythonEnv/
+
+# Logs
+*.log
+
+# Large generated files (outputs and uploads)
+uploads/
+outputs/
+
+# Model weights (optional: ignore if too large, keep if small)
+*.pt
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+uploads/
+outputs/
+*.mp4
+
+# Environment variables (VERY IMPORTANT)
+.env
+
